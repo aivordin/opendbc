@@ -59,7 +59,7 @@ def create_accel_command_2(packer, accel):
   values = {
     "ACCEL_CMD": accel,
   }
-  return packer.make_can_msg("ACC_CONTROL_2", 0, values)
+  return packer.make_can_msg("ACC_CONTROL_2", 1, values)
 
 def create_pcs_commands(packer, accel, active, mass):
   values1 = {
